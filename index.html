@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <title>Bress</title>
+</head>
+<body>
+    <div id="contentGeneral">
+
+        <div class="contentNav">
+            <nav class="navbar">
+                <div class="logo"><i class="fa fa-book" aria-hidden="true"></i> Bress</div>
+                <div class="navbarPosition">
+                    <li><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;&nbsp;  Dashboard</li>
+                    <li><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;&nbsp;  Projetos</li>
+                    <li class="active"><i class="fa fa-tasks" aria-hidden="true"></i>&nbsp;&nbsp;  Á fazer</li>
+                    <li><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;  Serviços</li>
+                    <li><i class="fa fa-bell" aria-hidden="true"></i>&nbsp;&nbsp;  Notificações <object class="notifications">5</object></li>
+                    <li><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;  Chat</li>
+                    <br/><br/><br/><br/><br/><br/>
+                </div>
+                <div class="perfilNavbar">
+                    <div class="photoPerfil">
+                        <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="">
+                        <div class="statusUser"></div> 
+                    </div>
+                    <h3>Murilo Barletta</h3>
+                    <div class="emailUser">murilodeassis@gmail.com</div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="contentBox">
+            <div class="infobar searchMobile">
+                <input class="searchInput" type="text" placeholder="Procurar..." name="searchBar">
+            </div>
+            <div class="infobar">
+                <div class="searchDate">
+                    <div class="contentSearch">
+                        <input class="searchInput" type="text" placeholder="Procurar..." name="searchBar">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                        <div class="date">
+                            <button>Segunda, 26/SET <object style="font-size:0.50rem;vertical-align: 2px;"><i class="fa fa-chevron-down"></i></object></button>
+                    </div>
+                </div>
+                <div class="selectType">
+                    <div class="generalTypes">
+                        <button class="cardOrList"><i class="fa fa-map" aria-hidden="true"></i> Cartões</button>
+                        <button class="cardOrList"><i class="fa fa-list"></i> Listas</button>
+                    </div>
+                </div>
+            </div>
+            <div style='text-align: center;' class="boxStandardBig">
+                <div class="topTasksTitle">
+                    <div class="principalTopTitle">
+                        <span class="titlePrincipalTopTitle">Últimas tarefas</span>
+                        <span class="descPrincipalTopTitle"><b>117</b> no total, verifique abaixo</span>
+                    </div>
+                    <div class="topTitleTickets">
+                        <div class="ticketsBox">
+                            <div class="titleTicketsBox">95</div>
+                            <span>Concluídos</span>
+                        </div>
+                        <div style="border:none;" class="ticketsBox">
+                            <div class="titleTicketsBox">95</div>
+                            <span>Em progresso</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tasks-container">
+                    <!-- Cabeçalhos das colunas -->
+                    <div class="header">
+                        <input class="checkboxTask" type="checkbox"> <!-- Checkbox global -->
+                        <span>Nome</span>
+                        <span>Organizador</span>
+                        <span>Membros</span>
+                        <span>Status</span>
+                        <span>Tempo</span>
+                        <span>Prazo final</span>
+                    </div>
+                    <!-- Exemplo de uma linha de tarefa com checkbox -->
+
+                    <div class="task">
+                        <input class="checkboxTask" type="checkbox"> <!-- Checkbox individual -->
+                        <span>Criação de website</span>
+                        <span>
+                            <div class="pictureTask">
+                                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Atendente 1">
+                            </div>
+                            Murilo B.
+                        </span>
+                        <span>3</span>
+                        <span class="status progress"><i class="fa fa-clock-o" aria-hidden="true">&nbsp;</i> Em progresso</span>
+                        <span>6 horas</span>
+                        <span class="taskDate">6 Meses</span>
+                    </div>
+
+                    <div class="task">
+                        <input class="checkboxTask" type="checkbox"> <!-- Checkbox individual -->
+                        <span>Atendimento no suporte</span>
+                        <span>
+                            <div class="pictureTask">
+                                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Atendente 1">
+                            </div>
+                            Murilo B.</span>
+                        <span>1</span>
+                        <span class="status done"><i class="fa fa-check-circle-o" aria-hidden="true">&nbsp;</i>Concluído</span>
+                        <span>8 horas</span>
+                        <span class="taskDate">1 Dia</span>
+                    </div>
+
+                    <div class="task">
+                        <input class="checkboxTask" type="checkbox"> <!-- Checkbox individual -->
+                        <span>Call alinhamento equipe</span>
+                        <span>
+                            <div class="pictureTask">
+                                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Atendente 1">
+                            </div>
+                            Murilo B.</span>
+                        <span>8</span>
+                        <span class="status progress"><i class="fa fa-clock-o" aria-hidden="true">&nbsp;</i>Em progresso</span>
+                        <span>1 Hora</span>
+                        <span class="taskDate">1 Dia</span>
+                    </div>
+
+                    <div class="task">
+                        <input class="checkboxTask" type="checkbox"> <!-- Checkbox individual -->
+                        <span>Manutenção de hardwares</span>
+                        <span>
+                            <div class="pictureTask">
+                                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Atendente 1">
+                            </div>
+                            Murilo B.</span>
+                        <span>1</span>
+                        <span class="status progress"><i class="fa fa-clock-o" aria-hidden="true">&nbsp;</i> Em progresso</span>
+                        <span>5 Horas</span>
+                        <span class="taskDate">1 Dia</span>
+                    </div>
+        
+                    <!-- Outras tarefas podem ser adicionadas aqui -->
+                </div>
+            </div>
+            <div class="boxGridSmall">
+                <div class="boxWidget">
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div style="background-color:#000019;" class="boxWidget">
+                    
+<!-- Cards aqui -->
+
+
+<div class="container">
+    <h2>Projects in progress:</h2>
+
+    <!-- Card 1 -->
+    <div class="card active" id="card1">
+        <div class="card-tags">
+            <span class="tag feedback">Retornado</span>
+            <span class="tag bug">Bug</span>
+            <span class="tag design-system">Desenvolvimento</span>
+        </div>
+        <h3>Ajuste de relatório</h3>
+        <p>26.09.24</p>
+        <div class="card-footer">
+            <div class="avatars">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 1">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 2">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 3">
+            </div>
+            <div>
+                <span>12 comentários</span> | <span>0 anexos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" id="card2">
+        <div class="card-tags">
+            <span class="tag feedback">Feedback</span>
+            <span class="tag bug">Bug</span>
+            <span class="tag design-system">Design System</span>
+        </div>
+        <h3>Teste de cartão</h3>
+        <p>26.09.24</p>
+        <div class="card-footer">
+            <div class="avatars">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 1">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 2">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE8E72R9oVTiQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1659126528700?e=1732752000&v=beta&t=M_z5kaZdHOJ6i6hdMEKqomDgZWyD1yTNAHTPdWrMKXk" alt="Avatar 3">
+            </div>
+            <div>
+                <span>15 comentários</span> | <span>3 anexos</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mais cards conforme necessário -->
+
+    <!-- Botões de Navegação -->
+    <button class="navigation-button prev" onclick="showPrevCard()">
+        &lt;
+    </button>
+    <button class="navigation-button next" onclick="showNextCard()">
+        &gt;
+    </button>
+</div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Todo script gerado via CHAT GPT-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let currentCard = 0;
+    const cards = document.querySelectorAll('.card');
+
+    function showCard(index) {
+        // Esconde todos os cards
+        cards.forEach(card => {
+            card.classList.remove('active');
+        });
+        // Mostra apenas o card com o índice correto
+        cards[index].classList.add('active');
+    }
+
+    function showNextCard() {
+        currentCard = (currentCard + 1) % cards.length; // Vai para o próximo card
+        showCard(currentCard);
+    }
+
+    function showPrevCard() {
+        currentCard = (currentCard - 1 + cards.length) % cards.length; // Vai para o card anterior
+        showCard(currentCard);
+    }
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [
+                    {
+                        label: 'Research',
+                        data: [1, 2, 2.5, 3.1, 3, 2, 1.5],
+                        borderColor: 'rgba(0, 123, 255, 1)', 
+                        fill: false, 
+                        tension: 0.4 
+                    },
+                    {
+                        label: 'Design',
+                        data: [1.5, 2, 1.7, 1.3, 1, 1, 0.8],
+                        borderColor: 'rgba(123, 50, 255, 1)',
+                        fill: false,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 4
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

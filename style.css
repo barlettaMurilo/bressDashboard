@@ -1,0 +1,548 @@
+body {
+    background-color:#B5C2CA;
+    font-family:"Roboto", sans-serif;
+    color:#081225;
+}
+
+#contentGeneral {
+    background-color:rgba(238, 130, 238,1);
+    width:90%;
+    height:100%;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+/* Navbar */
+
+.contentNav {
+    background-color:#f0f3f4;
+    width:20%;
+    float:left;
+    border-radius:1.3rem;
+    box-shadow:0px 0px 0px 4px #d8dee1 inset;
+    height:100%;
+    margin-bottom:5%;
+}
+
+.navbar {
+    width:80%;
+    margin:0 auto;
+    margin-top:0.6rem;
+    margin-bottom:2rem;
+    color:#525966;
+    list-style: none;
+    height:100%;
+}
+
+.logo {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#081225;
+    font-size:1.2rem;
+    padding: 2rem 1.3rem;
+    border-bottom: 3px solid #d8dee1;
+}
+
+.navbarPosition {
+    margin-top:1rem;
+}
+
+.navbar li {
+    padding:1rem 1.5rem;
+    margin-top:0.6rem;
+    border-radius:5rem;
+    font-size:0.8rem;
+    cursor:pointer;
+    transition: background-color 1s;
+}
+
+.navbar li:hover {
+    background-color:rgba(0,0,0,0.1);
+    transition: all 1s;
+}
+
+.active {
+    background-color:#081225;
+    color:white;
+    cursor:auto;
+}
+
+.notifications {
+    background-color:#b4df9e;
+    color:#000019;
+    text-align:center;
+    float:right;
+    width:1.3rem;
+    height:0.9rem;
+    border-radius:0.5rem;
+    margin-top:-5px;
+    padding:5px 0;
+}
+
+/* Perfil */
+
+.perfilNavbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfilNavbar img {
+    width:4rem;
+    height:4rem;
+    border-radius:50%;
+    border:0.2rem solid white;
+}
+
+.perfilNavbar .photoPerfil .statusUser {
+    width:0.8rem;
+    height:0.8rem;
+    background-color:#ff7675;
+    z-index:999999;
+    position:absolute;
+    margin-left:3rem;
+    margin-top:-1.5rem;
+    border-radius:50%;
+    border:0.1rem solid white;
+}
+
+.perfilNavbar .emailUser {
+    transform: translateY(-1rem);
+    font-size:0.800rem;
+    color:#8b8f99;
+}
+
+/* Boxes no geral */
+
+.contentBox {
+    width:78%;
+    height:100%;
+    float:right;
+}
+
+.infobar {
+    background-color:white;
+    width:100%;
+    height:5rem;
+    border-radius:1.3rem;
+    box-shadow: 0px 6px 17px -10px rgba(0,0,0,0.24);
+}
+
+.searchMobile {
+    display:none;
+    margin-bottom:1rem;
+}
+
+.searchDate {
+    height:100%;
+    width:35rem;
+    margin-left:2rem;
+    display: flex;
+    gap: 1rem;
+    float:left;
+}
+
+.contentSearch {
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentSearch .searchInput {
+    background-color:#f0f3f4;
+    border:none;
+    height:40px;
+    border-radius:5rem 0 0 5rem;
+    padding-left:1rem;
+    width:18rem;
+}
+
+.contentSearch button {
+    background-color:#f0f3f4;
+    cursor:pointer;
+    margin-left:-4px;
+    border-radius:0 5rem 5rem 0;
+    border:none;
+    height:42px;   
+    padding:0 1rem;
+    align-items: center;
+}
+
+.contentSearch button:hover {
+    background: rgb(240,243,244);
+    background: linear-gradient(90deg, rgba(240,243,244,1) 0%, rgba(205,205,205,1) 100%);
+}
+
+.date {
+    display:flex;
+    align-items: center;
+}
+
+.date button {
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    color:#8b8f99;
+}
+
+.selectType {
+    float:right;
+    margin-right:2rem;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.generalTypes {
+    background-color:#f0f3f4;
+    height:2.5rem;
+    border-radius:2rem;
+    display:flex;
+    align-items: center;
+    font-size:0.850rem;
+}
+
+.generalTypes .cardOrList {
+    background-color:transparent;
+    border:none;
+    padding:0 1.3rem;
+    height:100%;
+    border-radius:2rem;
+    transition:0.5s;
+    cursor:pointer;
+}
+
+.generalTypes .cardOrList:hover {
+    background-color:#081225;
+    color:white;
+}
+
+.boxStandardBig {
+    background-color:white;
+    border-radius:1.3rem;
+    width:100%;
+    margin-top:1rem;
+    box-shadow: 0px 6px 17px -10px rgba(0,0,0,0.24);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boxGridSmall {
+    display: flex;
+    gap: 1rem;
+    margin-top:1rem;
+}
+
+.boxWidget {
+    background-color: white;
+    padding: 20px;
+    border-radius: 1.3rem;
+    flex: 1;
+    box-shadow: 0px 6px 17px -10px rgba(0,0,0,0.24);
+}
+
+@media (max-width: 819px) {
+    .contentSearch input {
+        width:100%;
+    }
+    .contentNav {
+        float:none;
+        width:100%;
+    }
+    .contentBox {
+        width:100%;
+        float:none;
+    }
+    .contentSearch {
+        display:none;
+    }
+    .searchMobile {
+        display:flex;
+        align-items: center;
+    }
+    .searchInput {
+        background-color:#f0f3f4;
+        border:none;
+        height:2.5rem;
+        width:80%;
+        border-radius:5rem;
+        padding-left:1rem;
+    }
+}
+
+@media (max-width: 1130px) {
+    .selectType {
+        display:none;
+    }
+}
+
+.header-Container {
+    background-color:red;
+    display:none;
+}
+
+/* Container da Grid */
+.tasks-container {
+    display: grid;
+    grid-template-columns: 50px 2.0fr 1fr 0.5fr 1fr 0.5fr 0.6fr; 
+    gap: 10px;
+    margin: 0 auto; /* Centraliza a grid na página */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    font-weight: bold;
+    text-align: left;
+    display: contents; /* Para alinhar os itens com o grid */
+}
+
+/* Topo tarefas */
+
+.topTasksTitle {
+    width:100%;
+    height:5rem;
+    margin:0.5rem 0 0 0;
+}
+
+.principalTopTitle {
+    float:left;
+    display: flex;
+    flex-direction: column;
+    margin-left:0.5rem;
+}
+
+.titlePrincipalTopTitle {
+    font-size:1.8rem;
+    font-weight:bold;
+    margin-left:-0.8rem;
+}
+
+.descPrincipalTopTitle {
+    margin-top:0.5rem;
+}
+
+.topTitleTickets {
+    float:right;
+    height:100%;
+    margin-top:-1rem;
+    display: flex;              /* Coloca as .ticketsBox lado a lado */
+    justify-content: space-between;
+}
+
+.ticketsBox {
+    flex-grow: 1;           
+    text-align: center;     
+    border-right:1px solid #d8d8d8;
+    width:8rem;          
+}
+
+.ticketsBox span {
+    font-size:0.80rem;
+    color:#C0C1C7;
+}
+
+.titleTicketsBox {
+    width:100%;
+    font-size:2rem;
+    font-weight:bold;
+    padding:1rem 0 0 0;
+}
+
+
+
+/* Estilos para cada linha de tarefa */
+.task {
+    display: contents; /* Alinha as tarefas com o grid */
+}
+
+.header span {
+    padding: 10px 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color:transparent;
+    font-size:0.8rem;
+    color:#C0C1C7;
+}
+
+.task span {
+    padding: 0px 10px;
+    font-size:0.8rem;
+    text-align:left;
+    align-items: center;
+    display:flex;
+}
+
+.taskDate {
+    background-color:transparent;
+    display:flex;
+    align-items: center;
+    font-size:0.6rem;
+    background-color:rgba(0,0,0,0.05);
+    border-radius:2rem;
+    color:#818791;
+    font-weight:bold;
+    text-align:center;
+}
+
+.status {
+    background-color:transparent;
+    display:flex;
+    align-items: center;
+    font-size:0.6rem;
+}
+
+.progress {
+    background-color:#F0FCFF;
+    border-radius:2rem;
+    color:#4091A7;
+    font-weight:bold;
+}
+
+.done {
+    background-color:#ECF8E6;
+    border-radius:2rem;
+    color:#497A2F;
+    font-weight:bold;
+}
+
+.pictureTask {
+    background-color:red;
+    width:1.5rem;
+    height:1.5rem;
+    float:left;
+    border-radius:50%;
+    margin-right:0.6rem;
+}
+
+.pictureTask img {
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:50%;
+}
+
+/* Estilo para os checkboxes */
+.checkboxTask {
+    margin: 10px; /* Espaçamento ao redor dos checkboxes */
+    cursor: pointer;
+    width: 1rem;
+    background-color:red;
+}
+
+/* Graphic */ 
+
+.chart-container {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Você pode ajustar esse valor */
+    margin: auto;
+}
+
+/* cards */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card {
+    min-width: 300px;
+    max-width: 320px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Esconde os cards por padrão */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.card.active {
+    display: block; /* Mostra apenas o card ativo */
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tag.feedback {
+    background-color: #cceeff;
+    color: #007bff;
+}
+
+.tag.bug {
+    background-color: #e5fbe5;
+    color: #28a745;
+}
+
+.tag.design-system {
+    background-color: #f3e5f5;
+    color: #9c27b0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatars img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -10px;
+    border: 2px solid #fff;
+}
+
+.navigation-button {
+    background-color: #red;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition:0.5s;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+
+.navigation-button:hover {
+    background-color: #f0f0f0;
+    transform:scale(1.2);
+    transition:0.5s;
+}
